@@ -21,7 +21,7 @@ jobs:
       - name: Build project
         run: npm run build
       - name: cleanup
-        run: rm -rf node_modules/ package.json package-lock.json tailwind.config.js .github/workflows/deploy-site.yaml
+        run: rm -rf node_modules/  .github/workflows/deploy-site.yaml
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
